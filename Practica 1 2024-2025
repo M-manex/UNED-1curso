@@ -7,3 +7,14 @@ practica1:
 * DNI: #46371839#
 * EMAIL: #mmartinez8722@alumno.uned.es#
 ***************************************/
+#include <stdio.h>
+
+int main()
+{
+  printf("Manex\n");
+  printf("Martinez de Alegria\n");
+  printf("Arana\n");
+  printf("46371839\n");
+  printf("mmartinez8722@alumno.uned.es\n");
+  return 0;
+}
