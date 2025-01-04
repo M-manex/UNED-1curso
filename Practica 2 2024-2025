@@ -1,0 +1,106 @@
+practica2:
+
+/**************************************
+* NOMBRE: #Manex#
+* PRIMER APELLIDO: #Martinez de Alegria#
+* SEGUNDO APELLIDO: #Arana#
+* DNI: #46371839#
+* EMAIL: #mmartinez8722@alumno.uned.es#
+***************************************/
+
+#include <stdio.h>
+
+int main () {
+
+  int lado, linea, caracter, espacio;
+
+  printf ("Introduce el lado del rombo a mostrar");
+  scanf ("%d", &lado);
+  printf ("\n");
+
+  if (lado == 1) {
+      printf ("@\n");
+      }
+
+  if  (lado > 1 && lado <= 20) {
+
+      for (int linea = 1; linea <= lado; linea ++) {
+
+        for (int espacio = 1; espacio <= (lado - linea ); espacio ++) {
+          printf (" ");
+          }
+
+        for  (int caracter = 1; caracter <= linea; caracter ++) {
+
+          if (caracter % 4 == 1){
+            printf ("@");
+            }
+          if (caracter % 4 == 2){
+            printf (".");
+            }
+          if (caracter % 4 == 3){
+            printf ("o");
+            }
+          if (caracter % 4 == 0){
+            printf (".");
+            }
+          }
+
+        for (int caracter = linea; caracter >= 2 ; caracter --){
+
+          if (caracter % 4 == 2){
+            printf ("@");
+            }
+          if (caracter % 4 == 3) {
+            printf (".");
+            }
+          if (caracter % 4 == 0){
+            printf ("o");
+            }
+          if (caracter % 4 == 1){
+            printf (".");
+            }
+          }
+        printf ("\n");
+        }
+
+      for ( int linea = 1; linea <= lado ; linea ++){
+
+        for (int espacio = 1; espacio <= linea; espacio ++){
+          printf (" ");
+          }
+        for (int caracter = 1 ; caracter <= ( lado - linea ); caracter ++ ) {
+
+          if (caracter %4 == 1 ){
+            printf ("@");
+            }
+          if (caracter %4 == 2 ){
+            printf (".");
+            }
+          if (caracter %4 == 3 ) {
+            printf ("o");
+            }
+          if (caracter %4 ==0 ) {
+            printf (".");
+            }
+          }
+
+        for (int caracter = (lado - linea); caracter >= 2; caracter --) {
+
+          if (caracter %4 == 2){
+             printf ("@");
+            }
+          if (caracter %4 == 3){
+            printf (".");
+            }
+          if (caracter %4 == 0){
+            printf ("o");
+            }
+          if (caracter %4 == 1){
+            printf (".");
+            }
+          }
+        printf ("\n");
+        }
+    }
+  }
